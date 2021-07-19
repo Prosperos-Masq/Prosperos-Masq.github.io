@@ -56,6 +56,7 @@ body{
 .grid-nest {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-row-gap: 10px;
   grid-template-areas: 
     "img-1 content-1" 
@@ -144,8 +145,8 @@ ul {
 }
 
 .pro-img {
-  max-width: 860px;
-  height: auto;
+  width: 100%;
+  height: 100%;
 }
 
 .content {
@@ -161,11 +162,12 @@ ul {
   
 }
 
-@media screen and (max-width: 769px) {
-  .third-container {
+
+@media screen and (max-width: 700px) {
+  .grid-nest {
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: 1fr;
+    grid-auto-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-row-gap: 10px;
     grid-template-areas: 
     "img-1"
@@ -177,4 +179,8 @@ ul {
     "img-4"
     "content-4";
   }
+}
+
+@media screen and (max-width: 700px) {
+
 }
