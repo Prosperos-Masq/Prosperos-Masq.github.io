@@ -19,8 +19,8 @@ body{
 .first-container {
   height: 100vh;
   background: linear-gradient(311deg, #000000, #f3f2f2, #42466c);
-    background-size: 600% 600%;
-   animation: AnimationName 15s ease infinite;
+  background-size: 600% 600%;
+  animation: AnimationName 15s ease infinite;
 }
 
 @keyframes AnimationName {
@@ -181,6 +181,57 @@ ul {
     "img-4"
     "content-4";
   }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    max-width: 350px;
+    width: 345px;
+    border-radius: 10px;
+    padding: 15px;
+    flex-grow: 1;
+    justify-content: center;
+    background-color: white;
+    font-size: 30px;
+    justify-content: space-evenly;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    font-size: 30px;
+  }
+
+  li {
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    color: #8be8cc;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 95%;
+    align-items: center;
+    font-size: 1.7em;
+    padding: 15px;
+    margin: auto;
+  }
+
+  .pro-img {
+    width: auto;
+    height: auto;
+  }
 }
 
 @media screen and (max-width: 790px) {
@@ -190,6 +241,15 @@ ul {
     justify-content: center;
     align-items: center;
     margin-top: 25px;
-    height: 250vh;
+    height: 350vh;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .first-container {
+    height: 150vh;
+    background: linear-gradient(311deg, #000000, #f3f2f2, #42466c);
+    background-size: 600% 600%;
+    animation: AnimationName 15s ease infinite;
   }
 }
